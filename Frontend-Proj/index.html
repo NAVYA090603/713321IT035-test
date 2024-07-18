@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Government Service Portal</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+<link rel="apple-touch-icon" href="https://services.india.gov.in/assets/images/favicon/apple-touch-icon.png">
+<link rel="icon" href="https://services.india.gov.in/assets/images/favicon/favicon.png" />
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <link href="css/style.css" rel="stylesheet">
+    <style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: #474e5d;
+    padding-top: 50px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; 
+    border: 1px solid #888;
+    width: 80%;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+ 
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+</style>
+    
+</head>
+
+<body>
+
+  <header id="header">
+    <div class="container-fluid">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="#intro" class="scrollto">National Government Services Portal</a></h1>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#intro">Home</a></li>
+          <li><a href="service.html" target="_blank">Services</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#Visit Us">Visit Us</a></li>  
+          <li class="menu-has-children"><a href="">Account</a>
+            <ul>
+              <li><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button></li><br>
+              <li><button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</button></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section id="intro">
+    <div class="intro-container">
+      <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <div class="carousel-background"><img src="https://services.india.gov.in/assets/images/sabka-saath.jpg" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>12617 Services From States</h2>
+                <h2>Avail the services!</h2>
+                <a href="file:///C:/Users/NAVYA/Desktop/Frontend-Proj/service.html" target="_blank" class="btn-get-started scrollto">Get Started</a>
+              </div>
+            </div>
+          </div>
+
+          </div>
+       
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+    <section id="about">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>About Us</h3>
+         <p>Many government entities at the Center, State, District and Local levels are providing online services that have made the life of the citizens simpler and have also increased transparency and efficiency. These services are provided through multiple websites. 
+
+          In order to list these services in a well categorised and searchable interface, National Government Services Portal (https://services.india.gov.in) has been developed under the ambit of India Portal project which is being executed by NIC. 
+          
+          The purpose of this portal is to facilitate the listing of online services provided by various government entities under one platform and ensuring standardization with respect to content architecture and classification of services.</p>  
+    </header>
+
+        <div class="row about-cols">
+
+          <div class="col-md-4 wow fadeInUp">
+            <div class="about-col">
+              <div class="img">
+                <img src="img/about-mission.jpg" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Our Mission</a></h2>
+              
+        <p>
+          "To provide a efficient, and secure digital platform that facilitates access to government services for citizens, ensuring accountability,inclusiveness in public service delivery."
+        </p>
+        
+            </div>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="about-col">
+              <div class="img">
+                <img src="img/about-plan.jpg" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-list-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Our Plan</a></h2>
+                <p> Lay the foundation for the NGSP with a focus on infrastructure, security, and initial service offerings.Expand the range of services offered and enhance user experience.
+
+
+                </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="about-col">
+              <div class="img">
+                <img src="img/about-vision.jpg" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-eye-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Our Vision</a></h2>
+              <p>"To empower every citizen by providing a seamless, transparent, and user-friendly digital gateway to government services, fostering trust, efficiency, and inclusive growth for all."
+                 </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <section id="Visit Us" class="wow fadeInUp">
+      <div class="container">
+
+        <header class="section-header" style="background-image: https://media.licdn.com/dms/image/C4E1BAQGa8axj3GCdaA/company-background_10000/0/1647257652176/national_government_services_cover?e=2147483647&v=beta&t=bmB0DgQ-fimEHUVHGNRUuOez3W_EIoEPK1pG8_4NNPo;">
+          <h3>Visit Us</h3>
+        </header>
+
+        <div class="owl-carousel clients-carousel">
+          <img src="https://services.india.gov.in/assets/images/india-gov.png" alt="">
+          <img src="https://services.india.gov.in/assets/images/mygov.png" alt="">
+          <img src="https://services.india.gov.in/assets/images/data-gov.png" alt="">
+          <img src="https://services.india.gov.in/assets/images/logo-nic-blue.png" alt="">
+          <img src="https://services.india.gov.in/assets/images/cpgrams.png" alt="">
+          <img src="https://services.india.gov.in/assets/images/g20_logo.png" alt="">  
+        </div>
+
+      </div>
+    </section>
+    <section id="contact" class="section-bg wow fadeInUp">
+      <div class="container">
+
+        <div class="section-header">
+          <h3>Contact Us</h3>
+        </div>
+
+        <div class="row contact-info">
+
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="ion-ios-location-outline"></i>
+              <h3>Address</h3>
+              <address> Web Information Manager National Informatics Centre A4B4, 3rd Floor, A Block CGO Complex, Lodhi Road New Delhi-110003</address>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>Phone Number</h3>
+              <p><a href="tel:+5895548855">+91-11-24305756​</a></p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="ion-ios-email-outline"></i>
+              <h3>Email</h3>
+              <p><a href="mailto:info@example.com">indiaportal@gov.in</a></p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="file:///C:/Users/NAVYA/Desktop/Frontend-Proj/index.html">
+      <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      </div>
+
+    <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Login</button>
+      </div>
+  </form>
+</div>
+<script>
+var modal = document.getElementById('id01');
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+<div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="file:///C:/Users/NAVYA/Desktop/Frontend-Proj/index.html">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="email" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+<script>
+var modal = document.getElementById('id02');
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">Home</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">About us</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">Services</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              Address:
+              Web Information Manager
+              National Informatics Centre
+              A4B4, 3rd Floor, A Block
+              CGO Complex, Lodhi Road
+              New Delhi-110003<br>
+              Email: indiaportal@gov.in
+            </p>
+
+            <div class="social-links">
+              <a href="https://x.com/MyGovIndia?mx=2" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.facebook.com/MyGovIndia" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.instagram.com/mygovindia/" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="https://services.india.gov.in/?ln=en" class="google-plus"><i class="fa fa-google-plus"></i></a>
+              <a href="https://www.linkedin.com/company/mygov-india/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-newsletter">
+            <h4>Privacy policy</h4>
+            <p>National Government Services Portal (NGSP) and apps based on NGSP do not automatically capture any specific personal information from you, (like name, phone number or e-mail address), that allows us to identify you individually.
+</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit"  value="Subscribe">
+            </form>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-newsletter">
+            <h4>Terms & Conditions</h4>
+            <p>National Government Services Portal (NGSP) and apps based on NGSP do not automatically capture any specific personal information from you, (like name, phone number or e-mail address), that allows us to identify you individually.
+</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-top">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-auto">
+        <a href="https://services.india.gov.in/page/show/about_us/en" title="">About Us</a>&nbsp;|
+          <a href="https://services.india.gov.in/page/show/help/en" title="">Help</a>&nbsp;|
+          <a href="https://services.india.gov.in/page/show/terms_of_use/en" title="">Terms and Conditions</a>&nbsp;|
+          <a href="https://services.india.gov.in/page/show/site_map/en" title="">Site Map</a>&nbsp;|
+          <a href="https://services.india.gov.in/page/show/website_policy/en" title="">Website Policy</a>&nbsp;|
+          <a href="https://services.india.gov.in/page/show/link_to_us/en" title="">Link to us</a>&nbsp;|
+          <a href="https://services.india.gov.in/feed/index?ln=en" title="">RSS Feeds</a>&nbsp;|
+          <a href="https://services.india.gov.in/feedback?ln=en" title="">Feedback</a>&nbsp;|
+           <a href="https://services.india.gov.in/page/show/contact_us/en" title="">Contact us</a>&nbsp;|
+           <a href="https://services.india.gov.in/page/show/visitor_summary/en" title="">Visitor Summary</a>&nbsp;|
+        
+      </div></div>
+    </div></div>
+    <div class="footer-bottom">
+      <div class="container">
+      <div class="site-cert">
+    <a href="https://services.india.gov.in/assets/cqw_certificate.pdf" title="Certified Quality Website - CQW" target="_blank"><img src="https://services.india.gov.in/assets/images/cqw_logo.png" alt="CQW Logo" style="margin-left: 500px;" /></a>
+  <br>
+        </div>
+        <div class="footer-meta">
+        <p>This is the Government Services Portal of India, developed with an objective to enable a single window access to services being provided by the various Indian Government entities. This Portal is an initiative under the <a href="https://india.gov.in/" target="_blank">India Portal Project</a>.  It is designed and developed by <a href="http://www.nic.in/" target="_blank">National Informatics Centre (NIC)</a>, <a href="http://www.meity.gov.in/" target="_blank">Ministry of Electronics & Information Technology</a>, Government of India.</p>
+  <p>Last Updated: Jul 16, 2024</p>
+        </div>  
+      </div>
+    </div>  
+  </footer>
+  
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+  <script src="contactform/contactform.js"></script>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>
